@@ -1,2 +1,5 @@
 pandas==1.2.4
-sklearn==0.24.1
+sklearn==0.0
+numpy==1.20.3
+pickle==0.0.11
+streamlit==0.82.0
