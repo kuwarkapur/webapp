@@ -22,22 +22,22 @@ print(medi.columns)
 
 
 dataset_name = st.sidebar.selectbox(
-    'Select yes for proceeding further and no for not',
-    ('yes', 'no')
+    'Select YES to proceed or NO to go back',
+    ('Yes', 'No')
 )
-if dataset_name == 'yes':
+if dataset_name == 'Yes':
     st.write("""
     #    Welcome!
         """)
     st.header("webapp name")
     st.write(" This webapp helps you to remove the uneccesary negative aura in your life")
-    c=st.selectbox('Do you some times feel anxiety?',('yes','no'))
-    v = st.selectbox('Do you tend to do overthinking alot?', ('yes', 'no'))
+    c=st.selectbox('Do you sometimes feel anxiety?',('yes','no'))
+    v = st.selectbox('Do you overthinking alot?', ('yes', 'no'))
     k=st.selectbox('Do you tend to sleep alot?',('yes','no'))
     z = st.selectbox('Do you sometimes feel that you are confused about the trivial things?', ('yes', 'no'))
-    l = st.selectbox('Do you practice meditation ofently ?', ('yes', 'no'))
-    n = st.selectbox('Do you feel positive all the time ?', ('yes', 'no'))
-    o = st.selectbox('Can you say you always feel happy all the time  ?', ('yes', 'no'))
+    l = st.selectbox('Do you practice meditation often?', ('yes', 'no'))
+    n = st.selectbox('Do you feel positive all the time?', ('yes', 'no'))
+    o = st.selectbox('Can you say you feel happy all the time?', ('yes', 'no'))
     list=[c, v, k, z, l, n, o]
     for i in range(len(list)):
         if list[i] == "yes":
@@ -51,18 +51,17 @@ if dataset_name == 'yes':
     pred = loaded_model.predict(x)
     x[:] = np.zeros([1, 7])
 
-    # 4:- soothing,2:- happy,3:-relaxing,1:-focused,0:- calm
+    # 4:-soothing, 2:-happy, 3:-relaxing, 1:-focused, 0:- calm
     if pred == 0:
-        st.title('you should look into our calm music playlist')
+        st.title('You should look into our Calm music playlist')
     elif pred == 1:
-        st.title('you should look into our focused music playlist')
+        st.title('You should look into our Focused music playlist')
     elif pred == 2:
-        st.title('you should look into our happy music playlist')
+        st.title('You should look into our Happy music playlist')
     elif pred == 3:
-        st.title('you should look into our relaxing  music playlist')
+        st.title('You should look into our Relaxing  music playlist')
     elif pred == 4:
-            st.title('you should look into our soothing music playlist')
-
+		st.title('You should look into our Soothing music playlist')
 
 else:
-    st.title('you can also check our other options in webapp')
+    st.title('You can also check other options in our Webapp.')
