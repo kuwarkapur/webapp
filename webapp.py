@@ -1,8 +1,6 @@
 import pandas as pd
 import streamlit as st
 import pickle
-import webbrowser
-import time
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsRegressor
@@ -72,9 +70,7 @@ if dataset_name == 'Yes':
         st.markdown(focused_markdown)
     elif pred == 2:
         st.title('You should look into our Happy music playlist')
-#         st.title('Wait you will be redirected to the playlist in few seconds ')
-#         time.sleep(15)
-#         webbrowser.open_new_tab('https://happy-music-playlist.ishkapoor.repl.co/')
+
         happy_markdown = "[![](" + happy[1] + ")](" + happy[0] + ")"
         st.markdown(happy_markdown)
     elif pred == 3:
