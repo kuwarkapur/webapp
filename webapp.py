@@ -22,6 +22,14 @@ print(score)
 pickle.dump(neigh, open("webaapp.pkl", "wb"))
 print(medi.columns)
 
+# 4:-soothing, 2:-happy, 3:-relaxing, 1:-focused, 0:- calm
+happy = ["https://happy-music-playlist.ishkapoor.repl.co/", "https://image0.flaticon.com/icons/png/128/4566/4566044.png"]
+calm = ["https://calm-music-playlist.ishkapoor.repl.co/", "https://image.flaticon.com/icons/png/128/983/983033.png"]
+relaxing = ["https://relaxing-music-playlist.ishkapoor.repl.co/", "https://image.flaticon.com/icons/png/128/2395/2395687.png"]
+focused = ["https://focused-music-playlist.ishkapoor.repl.co/", "https://image.flaticon.com/icons/png/128/334/334323.png"]
+soothing = ["https://Soothing-Music-Playlist.ishkapoor.repl.co", "https://image.flaticon.com/icons/png/128/3220/3220587.png"]
+webapp = ["", "https://image.flaticon.com/icons/png/512/2177/2177275.png"]
+logo = "https://image.flaticon.com/icons/png/512/3612/3612293.png"
 
 dataset_name = st.sidebar.selectbox(
     'Select YES to proceed or NO to go back',
@@ -56,17 +64,27 @@ if dataset_name == 'Yes':
     # 4:-soothing, 2:-happy, 3:-relaxing, 1:-focused, 0:- calm
     if pred == 0:
         st.title('You should look into our Calm music playlist')
+        calm_markdown = "[![](" + calm[1] + ")](" + calm[0] + ")"
+        st.markdown(calm_markdown)
     elif pred == 1:
         st.title('You should look into our Focused music playlist')
+        focused_markdown = "[![](" + focused[1] + ")](" + focused[0] + ")"
+        st.markdown(focused_markdown)
     elif pred == 2:
         st.title('You should look into our Happy music playlist')
-        st.title('Wait you will be redirected to the playlist in few seconds ')
-        time.sleep(15)
-        webbrowser.open_new_tab('https://happy-music-playlist.ishkapoor.repl.co/')
+#         st.title('Wait you will be redirected to the playlist in few seconds ')
+#         time.sleep(15)
+#         webbrowser.open_new_tab('https://happy-music-playlist.ishkapoor.repl.co/')
+        happy_markdown = "[![](" + happy[1] + ")](" + happy[0] + ")"
+        st.markdown(happy_markdown)
     elif pred == 3:
         st.title('You should look into our Relaxing  music playlist')
+        relaxing_markdown = "[![](" + relaxing[1] + ")](" + relaxing[0] + ")"
+        st.markdown(relaxing_markdown)
     elif pred == 4:
         st.title('You should look into our Soothing music playlist')
+        soothing_markdown = "[![](" + soothing[1] + ")](" + soothing[0] + ")"
+        st.markdown(soothing_markdown)
 
 else:
     st.title('You can also check other options in our Webapp.')
