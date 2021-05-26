@@ -22,7 +22,7 @@ print(medi.columns)
 
 
 dataset_name = st.sidebar.selectbox(
-    'Select yes for procedding further and no for not',
+    'Select yes for proceeding further and no for not',
     ('yes', 'no')
 )
 if dataset_name == 'yes':
@@ -30,7 +30,7 @@ if dataset_name == 'yes':
     #    Welcome!
         """)
     st.header("webapp name")
-    st.write(" this webapp helps you to remove the uneccesary negative aora in your life")
+    st.write(" This webapp helps you to remove the uneccesary negative aura in your life")
     c=st.selectbox('Do you some times feel anxiety?',('yes','no'))
     v = st.selectbox('Do you tend to do overthinking alot?', ('yes', 'no'))
     k=st.selectbox('Do you tend to sleep alot?',('yes','no'))
@@ -66,8 +66,3 @@ if dataset_name == 'yes':
 
 else:
     st.title('you can also check our other options in webapp')
-
-
-
-
-# creating another pull request. All my changes in pul request were gone!
