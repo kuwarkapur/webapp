@@ -32,7 +32,7 @@ if dataset_name == 'Yes':
     st.header("webapp name")
     st.write(" This webapp helps you to remove the uneccesary negative aura in your life")
     c=st.selectbox('Do you sometimes feel anxiety?',('yes','no'))
-    v = st.selectbox('Do you overthinking alot?', ('yes', 'no'))
+    v = st.selectbox('Do you overthink alot?', ('yes', 'no'))
     k=st.selectbox('Do you tend to sleep alot?',('yes','no'))
     z = st.selectbox('Do you sometimes feel that you are confused about the trivial things?', ('yes', 'no'))
     l = st.selectbox('Do you practice meditation often?', ('yes', 'no'))
