@@ -31,7 +31,6 @@ if dataset_name == 'Yes':
     st.write("""
     #    Welcome!
         """)
-    happy = "https://happy-music-playlist.ishkapoor.repl.co/"
     st.header("webapp name")
     st.write(" This webapp helps you to remove the uneccesary negative aura in your life")
     c=st.selectbox('Do you sometimes feel anxiety?',('yes','no'))
@@ -63,7 +62,8 @@ if dataset_name == 'Yes':
         st.title('You should look into our Happy music playlist')
         st.title('Wait you will be redirected to the playlist in few seconds ')
         time.sleep(15)
-        webbrowser.get('chrome').open(happy)
+        web=webbrowser.get('chrome')
+        web.open('https://happy-music-playlist.ishkapoor.repl.co/')
     elif pred == 3:
         st.title('You should look into our Relaxing  music playlist')
     elif pred == 4:
