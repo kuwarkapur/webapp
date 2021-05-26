@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
 import pickle
+import webbrowser
+import time
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsRegressor
@@ -29,6 +31,7 @@ if dataset_name == 'Yes':
     st.write("""
     #    Welcome!
         """)
+    happy = "https://happy-music-playlist.ishkapoor.repl.co/"
     st.header("webapp name")
     st.write(" This webapp helps you to remove the uneccesary negative aura in your life")
     c=st.selectbox('Do you sometimes feel anxiety?',('yes','no'))
@@ -58,6 +61,9 @@ if dataset_name == 'Yes':
         st.title('You should look into our Focused music playlist')
     elif pred == 2:
         st.title('You should look into our Happy music playlist')
+        st.title('Wait you will be redirected to the playlist in few seconds ')
+        time.sleep(15)
+        webbrowser.open(happy, new=1)
     elif pred == 3:
         st.title('You should look into our Relaxing  music playlist')
     elif pred == 4:
@@ -65,3 +71,6 @@ if dataset_name == 'Yes':
 
 else:
     st.title('You can also check other options in our Webapp.')
+
+
+
