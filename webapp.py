@@ -37,7 +37,7 @@ if dataset_name == 'yes':
     z = st.selectbox('Do you sometimes feel that you are confused about the trivial things?', ('yes', 'no'))
     l = st.selectbox('Do you practice meditation ofently ?', ('yes', 'no'))
     n = st.selectbox('Do you feel positive all the time ?', ('yes', 'no'))
-    o = st.selectbox('Can you say you are feel_happy person ?', ('yes', 'no'))
+    o = st.selectbox('Can you say you always feel happy all the time  ?', ('yes', 'no'))
     list=[c, v, k, z, l, n, o]
     for i in range(len(list)):
         if list[i] == "yes":
