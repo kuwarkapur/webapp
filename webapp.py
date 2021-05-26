@@ -61,24 +61,24 @@ if dataset_name == 'Yes':
 
     # 4:-soothing, 2:-happy, 3:-relaxing, 1:-focused, 0:- calm
     if pred == 0:
-        st.title('You should look into our Calm music playlist \t 👇 ')
+        st.title('You should look into our Calm music playlist   👇 ')
         calm_markdown = "[![](" + calm[1] + ")](" + calm[0] + ")"
         st.markdown(calm_markdown)
     elif pred == 1:
-        st.title('You should look into our Focused music playlist \t 👇 ')
+        st.title('You should look into our Focused music playlist    👇 ')
         focused_markdown = "[![](" + focused[1] + ")](" + focused[0] + ")"
         st.markdown(focused_markdown)
     elif pred == 2:
-        st.title('You should look into our Happy music playlist \t  👇 ')
+        st.title('You should look into our Happy music playlist    👇 ')
 
         happy_markdown = "[![](" + happy[1] + ")](" + happy[0] + ")"
         st.markdown(happy_markdown)
     elif pred == 3:
-        st.title('You should look into our Relaxing  music playlist \t 👇  ')
+        st.title('You should look into our Relaxing  music playlist    👇  ')
         relaxing_markdown = "[![](" + relaxing[1] + ")](" + relaxing[0] + ")"
         st.markdown(relaxing_markdown)
     elif pred == 4:
-        st.title('You should look into our Soothing music playlist \t 👇 ')
+        st.title('You should look into our Soothing music playlist    👇 ')
         soothing_markdown = "[![](" + soothing[1] + ")](" + soothing[0] + ")"
         st.markdown(soothing_markdown)
 
