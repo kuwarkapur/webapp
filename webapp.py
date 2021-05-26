@@ -62,8 +62,7 @@ if dataset_name == 'Yes':
         st.title('You should look into our Happy music playlist')
         st.title('Wait you will be redirected to the playlist in few seconds ')
         time.sleep(15)
-        web=webbrowser.get('chrome')
-        web.open('https://happy-music-playlist.ishkapoor.repl.co/')
+        webbrowser.open_new_tab('https://happy-music-playlist.ishkapoor.repl.co/')
     elif pred == 3:
         st.title('You should look into our Relaxing  music playlist')
     elif pred == 4:
