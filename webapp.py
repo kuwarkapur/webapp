@@ -20,7 +20,7 @@ print(score)
 pickle.dump(neigh, open("webaapp.pkl", "wb"))
 print(medi.columns)
 
-st.set_page_config(page_title="Spam-Ham Filter Predictor Web App", page_icon="https://image.flaticon.com/icons/png/16/3612/3612293.png")
+st.set_page_config(page_title="Music recommendation", page_icon="https://image.flaticon.com/icons/png/16/3612/3612293.png")
 
 # 4:-soothing, 2:-happy, 3:-relaxing, 1:-focused, 0:- calm
 happy = ["https://happy-music-playlist.ishkapoor.repl.co/", "https://image0.flaticon.com/icons/png/128/4566/4566044.png"]
