@@ -20,13 +20,15 @@ print(score)
 pickle.dump(neigh, open("webaapp.pkl", "wb"))
 print(medi.columns)
 
+st.set_page_config(page_title="Spam-Ham Filter Predictor Web App", page_icon="https://image.flaticon.com/icons/png/16/3612/3612293.png")
+
 # 4:-soothing, 2:-happy, 3:-relaxing, 1:-focused, 0:- calm
 happy = ["https://happy-music-playlist.ishkapoor.repl.co/", "https://image0.flaticon.com/icons/png/128/4566/4566044.png"]
 calm = ["https://calm-music-playlist.ishkapoor.repl.co/", "https://image.flaticon.com/icons/png/128/983/983033.png"]
 relaxing = ["https://relaxing-music-playlist.ishkapoor.repl.co/", "https://image.flaticon.com/icons/png/128/2395/2395687.png"]
 focused = ["https://focused-music-playlist.ishkapoor.repl.co/", "https://image.flaticon.com/icons/png/128/334/334323.png"]
 soothing = ["https://Soothing-Music-Playlist.ishkapoor.repl.co", "https://image.flaticon.com/icons/png/128/3220/3220587.png"]
-webapp = ["", "https://image.flaticon.com/icons/png/512/2177/2177275.png"]
+webapp = ["https://www.instagram.com/", "https://image.flaticon.com/icons/png/512/2177/2177275.png"]
 logo = "https://image.flaticon.com/icons/png/512/3612/3612293.png"
 
 dataset_name = st.sidebar.selectbox(
@@ -84,6 +86,5 @@ if dataset_name == 'Yes':
 
 else:
     st.title('You can also check other options in our Webapp.')
-
-
-
+    webapp_markdown = "[![](" + webapp[1] + ")](" + webapp[0] + ")"
+    st.markdown(webapp_markdown)
