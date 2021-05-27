@@ -29,7 +29,7 @@ relaxing = ["https://relaxing-music-playlist.ishkapoor.repl.co/", "https://image
 focused = ["https://focused-music-playlist.ishkapoor.repl.co/", "https://image.flaticon.com/icons/png/128/334/334323.png"]
 soothing = ["https://Soothing-Music-Playlist.ishkapoor.repl.co", "https://image.flaticon.com/icons/png/128/3220/3220587.png"]
 webapp = ["https://www.instagram.com/", "https://image.flaticon.com/icons/png/512/2177/2177275.png"]
-logo = "https://image.flaticon.com/icons/png/128/3612/3612293.png""
+logo = "https://image.flaticon.com/icons/png/128/3612/3612293.png"
 
 dataset_name = st.sidebar.selectbox(
     'Select YES to proceed or NO to go back',
