@@ -41,13 +41,13 @@ if dataset_name == 'Yes':
         """)
     st.header("webapp name")
     st.write(" This webapp helps you to remove the uneccesary negative aura in your life")
-    c=st.selectbox('Do you sometimes feel anxiety?',('yes','no'))
-    v = st.selectbox('Do you overthink alot?', ('yes', 'no'))
-    k=st.selectbox('Do you tend to sleep alot?',('yes','no'))
-    z = st.selectbox('Do you sometimes feel that you are confused about the trivial things?', ('yes', 'no'))
-    l = st.selectbox('Do you practice meditation often?', ('yes', 'no'))
-    n = st.selectbox('Do you feel positive all the time?', ('yes', 'no'))
-    o = st.selectbox('Can you say you feel happy all the time?', ('yes', 'no'))
+    c=st.selectbox(' 🚀 Do you sometimes feel anxiety?',('yes','no'))
+    v = st.selectbox(' 🚀 Do you overthink alot?', ('yes', 'no'))
+    k=st.selectbox(' 🚀 Do you tend to sleep alot?',('yes','no'))
+    z = st.selectbox(' 🚀 Do you sometimes feel that you are confused about the trivial things?', ('yes', 'no'))
+    l = st.selectbox(' 🚀 Do you practice meditation often?', ('yes', 'no'))
+    n = st.selectbox(' 🚀 Do you feel positive all the time?', ('yes', 'no'))
+    o = st.selectbox(' 🚀 Can you say you feel happy all the time?', ('yes', 'no'))
     list=[c, v, k, z, l, n, o]
     for i in range(len(list)):
         if list[i] == "yes":
@@ -63,24 +63,28 @@ if dataset_name == 'Yes':
 
     # 4:-soothing, 2:-happy, 3:-relaxing, 1:-focused, 0:- calm
     if pred == 0:
-        st.title('You should look into our Calm music playlist   👇 ')
+        st.title('You should look into our Calm music playlist   ')
+        St.title('👇')
         calm_markdown = "[![](" + calm[1] + ")](" + calm[0] + ")"
         st.markdown(calm_markdown)
     elif pred == 1:
-        st.title('You should look into our Focused music playlist    👇 ')
+        st.title('You should look into our Focused music playlist     ')
+        St.title('👇')
         focused_markdown = "[![](" + focused[1] + ")](" + focused[0] + ")"
         st.markdown(focused_markdown)
     elif pred == 2:
-        st.title('You should look into our Happy music playlist    👇 ')
-
+        st.title('You should look into our Happy music playlist    ')
+        St.title('👇')
         happy_markdown = "[![](" + happy[1] + ")](" + happy[0] + ")"
         st.markdown(happy_markdown)
     elif pred == 3:
-        st.title('You should look into our Relaxing  music playlist    👇  ')
+        st.title('You should look into our Relaxing  music playlist      ')
+        St.title('👇')
         relaxing_markdown = "[![](" + relaxing[1] + ")](" + relaxing[0] + ")"
         st.markdown(relaxing_markdown)
     elif pred == 4:
-        st.title('You should look into our Soothing music playlist    👇 ')
+        st.title('You should look into our Soothing music playlist     ')
+        St.title('👇')
         soothing_markdown = "[![](" + soothing[1] + ")](" + soothing[0] + ")"
         st.markdown(soothing_markdown)
 
