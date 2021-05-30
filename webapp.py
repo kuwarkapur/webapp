@@ -39,7 +39,7 @@ if dataset_name == 'Yes':
     st.write("""
     #    Welcome!
         """)
-    st.header("webapp name")
+    st.header("Savyasana")
     st.write(" This webapp helps you to remove the uneccesary negative aura in your life")
     c=st.selectbox(' 🚀 Do you sometimes feel anxiety?',('yes','no'))
     v = st.selectbox(' 🚀 Do you overthink alot?', ('yes', 'no'))
